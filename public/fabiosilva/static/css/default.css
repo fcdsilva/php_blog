@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Fabio Silva Blog 2012
+Theme URI: http://fabiosilva.it/blog
+Description: Blog (Personal Blog of Fabio Silva) 
+Author: Fabio Silva
+Version: 1.0
+*/
+
+@import url('./fonts/fonts.css');
+
+
+/** SIMPLE CSS RESET **/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+img {
+	max-width: 100%; /* set image max width to 100% */
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+
+/** GENERAL STYLING **/
+
+i { font-style: italic; }
+b { font-weight: bold; }
+strong { font-weight: bold; }
+input { vertical-align: middle; }
+
+html body { 
+	background: #eee url(../images/bgd.gif); 
+	height: 100%;
+	color: #555; 
+	font-family: HelveticaNeueLight, helvetica, arial, tahoma, sans-serif;
+	font-size: 14px; 
+	text-align: left; 	
+}
+
+/** STRUCTURE **/
+.inner{ 
+	width: 980px; 
+	margin: 0 auto 0 auto;
+	clear: both; 
+	height: 1px; 
+	margin-bottom: -1px; 
+}
+
+.clear{ 
+	clear: both; 
+	height: 1px; 
+	margin-bottom: -1px; 
+}
+
+
+/** HEADER **/
+div#header{
+	background: url(../images/bgd-header.png);
+	height: 60px; 
+}
+
+div#header #logo {
+    float: left;
+    width: 300px;
+    margin-top: 8px;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+div#header #search {
+    float: right;
+    width: 220px;
+    margin-top: 17px;
+}
+
+div#header #search #form {
+    background: url(../images/search-box.gif) no-repeat top left;
+}
+
+div#header #search input#text {
+    width: 158px;
+    height: 26px;
+    margin: 0;
+    padding: 0 0 0 23px;
+    font-size: 12px;
+    color: #bbb;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+}
+
+div#header #search input#text:focus {
+	color: #444444;
+	outline: none;
+}
+
+/** CONTENT **/
+div#content{
+    
+}
+
+div#content a:link, a:visited {
+	color: #4083a9;
+	outline: none;
+	text-decoration: none;
+}
+
+div#content a:hover {
+	text-decoration: none;
+	color: #205f82;
+}
+
+div#content .allPosts {
+    float: left;
+    width: 620px;
+    margin: 20px 0 20px 0;
+}
+
+div#content .allPosts #home {
+    margin-bottom: 40px;
+}
+
+div#content .allPosts h1 {
+    font-size: 30px;
+}
+
+div#content .allPosts .postMeta {
+	margin: 0 0 10px;
+	font-size: 90%;
+}

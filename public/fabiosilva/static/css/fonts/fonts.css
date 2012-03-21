@@ -1,0 +1,63 @@
+/** Para colocar fonts fora do sistema **/
+@font-face {
+	font-family: HelveticaNeueLight;
+	src: url("helveticaneueltstd-lt-webfont.eot");
+    src: url('helveticaneueltstd-lt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('helveticaneueltstd-lt-webfont.ttf') format('truetype');
+}
+@font-face {
+	font-family: HelveticaNeue;
+	src: url("helveticaneue-webfont.eot");
+    src: url('helveticaneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('helveticaneue-webfont.ttf') format('truetype');}
+
+ @font-face {
+     font-family: 'MuseoSans500';
+     src: url('museosans_500-webfont.eot');
+     src: url('museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+          url('museosans_500-webfont.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+
+ }
+
+ @font-face {
+     font-family: 'MuseoSans700';
+     src: url('museosans_700-webfont.eot');
+     src: url('museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+          url('museosans_700-webfont.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+
+ }
+
+ @font-face {
+     font-family: 'MuseoSans100';
+     src: url('museosans-100-webfont.eot');
+     src: url('museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+          url('museosans-100-webfont.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+
+ }
+
+ @font-face {
+     font-family: 'MuseoSans300';
+     src: url('museosans-300-webfont.eot');
+     src: url('museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+          url('museosans-300-webfont.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+
+ }
+
+ @font-face {
+     font-family: 'MuseoSans900';
+     src: url('museosans_900-webfont.eot');
+     src: url('museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+          url('museosans_900-webfont.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+
+ }
+

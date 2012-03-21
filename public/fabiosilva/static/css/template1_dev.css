@@ -1,0 +1,216 @@
+
+
+/************************************************************************************
+Simple CSS Reset
+*************************************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+/* set image max width to 100% */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu'), url('http://themes.googleusercontent.com/static/fonts/ubuntu/v4/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff') format('woff');
+}
+
+i { font-style: italic; }
+b { font-weight: bold; }
+strong { font-weight: bold; }
+input { vertical-align: middle; }
+
+html body { 
+	background: #eee url(../images/bgd.gif); 
+	height: 100%;
+	color: #555; 
+	font-family: HelveticaNeueLight, helvetica, arial, tahoma, sans-serif;
+	font-size: 14px; 
+	text-align: left; 	
+}
+	
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+.inner{ 
+	width: 980px; 
+	margin: 0 auto 0 auto; 
+}
+
+.clear{ 
+	clear: both; 
+	height: 1px; 
+	margin-bottom: -1px; 
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+header { 
+	background: url(../images/bgd-header.png);
+	height: 60px; 
+}
+	
+header #logo {
+    float: left;
+    width: 300px;
+    margin-top: 8px;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+header #search {
+    float: right;
+    width: 220px;
+    margin-top: 17px;
+}
+
+header #search #form {
+    background: url(../images/search-box.gif) no-repeat top left;
+}
+
+header #search input#text {
+    width: 158px;
+    height: 26px;
+    margin: 0;
+    padding: 0 0 0 23px;
+    font-size: 12px;
+    color: #bbb;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+
+    /*  Caso for utilizar o botao GO! substiuir os valores atuais, por estes:
+        margin: 0 5px 0 0;
+        padding: 0 0 0 23px;
+      */
+}
+
+header #search input#text:focus {
+  color: #444444;
+  outline: none;
+}
+
+
+/** Content **/
+div#content{
+    
+}
+
+div#content a:link, a:visited {
+  color: #4083a9;
+  outline: none;
+  text-decoration: none;
+}
+
+div#content a:hover {
+  text-decoration: none;
+  color: #205f82;
+}
+
+section#posts {
+    float: left;
+    /*background: #fff;*/
+    width: 620px;
+    margin: 20px 0 20px 0;
+    /*padding: 30px;*/
+    /*box-shadow:1px 0 10px 3px rgba(0, 0, 0, 0.2);*/
+}
+
+section#posts article {
+    margin-bottom: 40px;
+}
+
+section#posts article h1 {
+    font-size: 30px;
+}
+
+section#posts article .post_meta {
+	margin: 0 0 10px;
+	font-size: 90%;
+}
+
+section#posts article iframe { 
+    width: 100%;
+    height: 420px;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+
+
+
+
+
+
+/** Sidebar **/
+aside#sidebar {
+    float: right;
+    background: #fff;
+    width: 300px;
+
+}
+
+aside#sidebar h3{
+	color: #4083a9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/** Footer **/
+footer{
+	background: #fff;
+	border-top: 1px #ccc solid;
+	height: 100px; 
+	margin: 30px 0 0 0; /* remover assim que aplica conteudo! */
+	padding: 20px 0 15px 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #777777;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #ea4c89;
+}
+
+footer p{
+    margin: 12px 0 0 0;
+}
+
+footer #nav li{
+    float: left;
+}
+
+	

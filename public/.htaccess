@@ -1,0 +1,47 @@
+#
+# Htaccess file for Standard version
+#
+
+# Force utf-8 for a number of file formats:
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .css .rss .xml .js .txt .do
+
+# Compress the content with gzip
+<IfModule mod_deflate.c>
+#	AddOutputFilterByType DEFLATE text/html text/plain text/css application/x-javascript text/javascript application/javascript application/json text/xml application/xml application/rss+xml
+	
+	<FilesMatch "\.(ttf|otf|svg)$">
+#		SetOutputFilter DEFLATE
+	</FilesMatch>
+</IfModule>
+
+# This file allows access only to admins and search engines
+#<Files "robots.txt">
+#    Order deny,allow
+#    Deny from all
+#    Allow from 127.0.0.1
+#    Allow from 192.168.10.
+#</Files>
+
+
+# Applies the rewrite rules and redirecting
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	
+#	RewriteCond %{http_host} ^www\.fabiosilva\.it [NC]
+#	RewriteRule ^(.*)$ http://fabiosilva.it/$1 [R=301,NC]
+
+#	RewriteRule ^(br|en)/(.*)$ $2?ul=$1 [NC,L,QSA]
+
+	RewriteRule ^blog$ http://blog.fabiosilva.it/ [R=301,NC]
+        RewriteRule ^tumblr$ http://zapeandopelaweb.tumblr.com/ [R=301,NC]
+
+#	RewriteCond %{SCRIPT_FILENAME} !-f
+#	RewriteCond %{SCRIPT_FILENAME} !-d
+#	RewriteRule (.*) index.php/?ur=$1 [QSA,L]
+
+		
+
+</IfModule>
+
